@@ -1,0 +1,34 @@
+---
+title: "Codebook of variables of peer-review assignment run_analysis Coursera Data Science by AJ"
+output: html_notebook
+---
+
+
+```{r}
+run_analysis <- source("run_analysis.R") 
+
+run_analysis$features #features.txt file
+run_analysis$mean_vect #list of 'mean' variables
+run_analysis$mean_vars #list of 'mean' variables in text format
+run_analysis$std_vect #and for std
+run_analysis$std_vars #idem
+run_analysis$mean_std_vect #for both mean and std
+run_analysis$mean_std_vars 
+run_analysis$vect_vars #combined list of mean and std variables with position in 561 feature vector
+run_analysis$xtest # x_test data
+run_analysis$xtest_select #selection of features based on vect_vars
+run_analysis$ytest #activity list 
+run_analysis$name_vec #renamed activity labels with descriptive labels
+run_analysis$test_subject #subject list
+run_analysis$test #complete test-set
+run_analysis$xtrain  #similar process for 'train' data set
+run_analysis$xtrain_select 
+run_analysis$ytrain 
+run_analysis$train_subject 
+run_analysis$train 
+run_analysis$learn #combination of 'test' and 'train' data sets
+run_analysis$avg_activ #computation of average of test/train values per subject per activity 
+run_analysis$avg_activ_plyr #alternative computation using dplyr
+```
+
+

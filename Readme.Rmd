@@ -1,0 +1,21 @@
+---
+title: "Readme on R course 'Cleaning data' peer-reviewed assignment by AJ"
+output: html_notebook
+---
+
+run_analysis is a function that takes a dataset on body accelaration and gyroscpic measurements.
+The files are seperated into a subject-file, indicating subjects for both 'train' and 'test' sets,
+an activity file, that ranges from 1-6 based on activity, and an x_test file.
+
+The x_test/train files list 561 columns with different feature calculations, listed in features.txt.
+
+Run_analysis combines the train and test sets into one frame, termed 'learn'. It does so by
+column-binding the subject and activities to the feature-vector. Also, it only selects the mean and std
+variables from the features.txt file, by using the 'grep' function to extract the position and text-value
+of these variables.
+
+After combining both data sets, the frame is arranged and the average values per subject per activity
+are calculated using the 'aggregate' function. 
+
+
+
